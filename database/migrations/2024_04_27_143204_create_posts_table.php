@@ -16,10 +16,13 @@ return new class extends Migration
             $table->string('title');
             $table->integer('user_id');
             $table->string('slug');
-            $table->string('tags');
+            $table->integer('tag_id');
             $table->longText('content');
             $table->string('image')->nullable();
             $table->integer('category_id');
+            $table->integer('heading');
+            $table->integer('breaking');
+            $table->integer('latest');
             $table->boolean('published')->default(0);    
 
             $table->timestamps();

@@ -5,7 +5,7 @@
 
         <div class="col-12">
             <div class="container">
-                <h1>Category List</h1>
+                <h1>Tag List</h1>
                 <hr>
 
                 <div class="table-responsive">
@@ -19,13 +19,13 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($categories as $data)
+                            @foreach ($tags as $data)
                                 <tr>
                                     <td style="width:33%;">{{ $data->id }}</td>
                                     <td style="width:33%;">{{ $data->name }}</td>
                                     <td style="width:33%;">
-                                        <a href="{{ route('edit_category', $data->id) }}" class="btn btn-primary">Edit</a>
-                                        <a href="{{ route('delete_category', $data->id) }}" class="btn btn-danger">Delete</a>
+                                        <a href="{{ route('edit_tag', $data->id) }}" class="btn btn-primary">Edit</a>
+                                        <a href="{{ route('delete_tag', $data->id) }}" class="btn btn-danger">Delete</a>
 
                                 </tr>
                             @endforeach

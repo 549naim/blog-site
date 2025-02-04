@@ -1,6 +1,6 @@
 @extends('front.layouts.master')
 @section('title')
-    TECH-DAILY | HOME
+COINPREDICTHUB | HOME
 @endsection
 @section('section')
    @include('front.layouts.header')

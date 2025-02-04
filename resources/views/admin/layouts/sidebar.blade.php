@@ -147,9 +147,17 @@
                     </ul>
                 </li>
                 <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                            class="icon icon-app-store"></i><span class="nav-text">tag</span></a>
+                    <ul aria-expanded="false">
+                        <li><a href="{{route('tag_list')}}">All tags</a></li>
+                       
+                        <li><a href="{{route('create_tag')}}">Create tag</a></li>
+                    </ul>
+                </li>
+                <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
                             class="icon icon-app-store"></i><span class="nav-text">Blog</span></a>
                     <ul aria-expanded="false">
-                        <li><a href="{{ asset('admin/') }}app-profile.html">All Blogs</a></li>
+                        <li><a href="{{route('post_list')}}">All Blog</a></li>
                        
                         <li><a href="{{route('create_post')}}">Create Blog</a></li>
                     </ul>

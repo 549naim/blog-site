@@ -38,7 +38,23 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/category_list', [BlogController::class, 'category_list'])->name('category_list');
     Route::get('/create_category', [BlogController::class, 'create_category'])->name('create_category');
     Route::post('/store_category', [BlogController::class, 'store_category'])->name('store_category');
+    Route::get('/edit_category/{id}', [BlogController::class, 'edit_category'])->name('edit_category');
+    Route::post('/update_category/{id}', [BlogController::class, 'update_category'])->name('update_category');
+    Route::get('/delete_category/{id}', [BlogController::class, 'delete_category'])->name('delete_category');
+
+    Route::get('/tag_list', [BlogController::class, 'tag_list'])->name('tag_list');
+    Route::get('/create_tag', [BlogController::class, 'create_tag'])->name('create_tag');
+    Route::post('/store_tag', [BlogController::class, 'store_tag'])->name('store_tag');
+    Route::get('/edit_tag/{id}', [BlogController::class, 'edit_tag'])->name('edit_tag');
+    Route::post('/update_tag/{id}', [BlogController::class, 'update_tag'])->name('update_tag');
+    Route::get('/delete_tag/{id}', [BlogController::class, 'delete_tag'])->name('delete_tag');
+
 
     Route::get('/create_post', [BlogController::class, 'create_post'])->name('create_post');
     Route::post('/store_post', [BlogController::class, 'store_post'])->name('store_post');
+    Route::get('/post_list', [BlogController::class, 'post_list'])->name('post_list');
+    Route::get('/view_post', [BlogController::class, 'view_post'])->name('view_post');
+    Route::get('/edit_post/{id}', [BlogController::class, 'edit_post'])->name('edit_post');
+    Route::post('/update_post/{id}', [BlogController::class, 'update_post'])->name('update_post');
+    Route::get('/delete_post/{id}', [BlogController::class, 'delete_post'])->name('delete_post');
 });

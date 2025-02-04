@@ -11,7 +11,7 @@
     <meta content="Free HTML Templates" name="description">
     {{-- <link rel="icon" href="{{asset('front/images/others/favicon.ico')}}"> --}}
     <!-- Favicon -->
-    <link href="{{ asset('/front/img/favicon.ico') }}" rel="icon">
+    <link href="{{ asset('/front/img/coinpredicthub.png') }}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">

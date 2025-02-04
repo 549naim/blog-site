@@ -61,36 +61,7 @@
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 }
             });
-            $('#saveBtn').click(function() {
-                // Get the HTML content of the editor
-                var name = $('#title').val();
-                var category_id = $('#category_id').val();
-                var image = $('#image').val();
-                var editorContent = $('#editor .ql-editor ').html();
-                console.log(editorContent);
-
-                // You can now send editorContent to your backend to store it in the database
-                // For example, using AJAX:
-                $.ajax({
-                    url: "{{ route('store_post') }}",
-                    type: 'POST',
-                    data: {
-                        name: name,
-                        category_id: category_id,
-                        image: image,
-                        content: editorContent
-                    },
-                    dataType: "json",
-                    success: function(response) {
-                        // Handle success response
-                        console.log('Content saved successfully');
-                    },
-                    error: function(xhr, status, error) {
-                        // Handle error
-                        console.error('Error saving content:', error);
-                    }
-                });
-            });
+           
         });
     </script>
 @endsection
